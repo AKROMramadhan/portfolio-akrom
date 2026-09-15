@@ -10,7 +10,7 @@ const projects = [
   },
   {
     number: "02",
-    type: "Legal Aid",
+    type: "Certified Paralegal of Legal Aid",
     title: "Unit Konsultasi & Bantuan Hukum",
     description:
       "Memberikan dukungan layanan hukum litigasi dan non-litigasi bidang perdata dan pidana, mulai pra-peradilan hingga pasca putusan. Mendukung telaah hukum, pendapat hukum, gelar perkara, pendampingan klien, dan pengelolaan database bantuan hukum.",
