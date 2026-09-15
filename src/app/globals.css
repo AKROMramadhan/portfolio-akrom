@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #020817;
-  --foreground: #e2e8f0;
+  --paper: #f3f0e8;
+  --ink: #17221f;
+  --muted: #68736f;
+  --line: #d3d5ca;
+  --coral: #e95d4e;
+  --blue: #2d5e67;
+  --gold: #e9b94d;
+  --background: var(--paper);
+  --foreground: var(--ink);
 }
 
 @theme inline {
@@ -19,7 +26,42 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+.font-serif {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.animate-rise {
+  animation: rise-in 700ms ease-out both;
+}
+
+.project-poster {
+  color: var(--ink);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-poster::after {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  right: -38px;
+  top: -50px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.poster-coral { background: var(--coral); }
+.poster-blue { background: #83a9a7; }
+.poster-gold { background: var(--gold); }
+
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 ::selection {

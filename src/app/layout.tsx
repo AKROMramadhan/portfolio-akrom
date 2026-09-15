@@ -13,14 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Akrom Ramadhan | Portfolio",
-  description: "Personal portfolio website for Akrom Ramadhan.",
+  title: "Akrom Ramadhan | Digital maker",
+  description: "Portfolio Akrom Ramadhan, frontend developer untuk produk digital yang jelas dan berguna.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="en"
+      lang="id"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>

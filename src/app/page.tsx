@@ -1,161 +1,142 @@
 const projects = [
   {
-    title: "Portfolio Akrom",
+    number: "01",
+    type: "Institutional website",
+    title: "Unit Konsultasi dan Bantuan Hukum",
     description:
-      "Ini adalah portofolio modern dari Akrom.js and Tailwind CSS for a polished digital presence.",
-    stack: ["Next.js", "Tailwind", "TypeScript"],
+      "Merapikan akses informasi layanan bantuan hukum untuk civitas akademika dan masyarakat umum.",
+    stack: ["Next.js", "Content design"],
+    tone: "coral",
   },
   {
-    title: "Bagian hukum",
+    number: "02",
+    type: "Public service",
+    title: "Pengadilan Negeri Purbalingga 1B",
     description:
-      "Responsive marketing page focused on product clarity, conversion, and strong visual storytelling.",
-    stack: ["React", "UI Design", "Responsive"],
+      "Menyusun pengalaman digital yang lebih jelas untuk informasi perkara, layanan, dan publikasi pengadilan.",
+    stack: ["Responsive UI", "Information architecture"],
+    tone: "blue",
   },
   {
-    title: "Dashboard Experience",
+    number: "03",
+    type: "Professional services",
+    title: "PPAT / Notaris Sri Wahyu Jatmikowati",
     description:
-      "Data-driven interface concept designed for clarity, usability, and decision-making workflows.",
-    stack: ["Analytics", "UX", "Figma"],
+      "Membangun kehadiran digital yang tepercaya untuk layanan pertanahan dan legalitas.",
+    stack: ["UX direction", "Web design"],
+    tone: "gold",
   },
 ];
 
-const stats = [
-  { label: "Projects shipped", value: "12+" },
-  { label: "Years experience", value: "3" },
-  { label: "Client satisfaction", value: "100%" },
-];
+const capabilities = ["Web design", "Frontend development", "Content systems"];
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-950 text-slate-100">
-      <div className="mx-auto max-w-6xl px-6 py-8 sm:px-8 lg:px-12">
-        <header className="flex items-center justify-between border-b border-slate-800 pb-6">
-          <div className="text-lg font-semibold tracking-[0.2em] text-cyan-400 uppercase">
-            AKROM
-          </div>
-          <nav className="hidden gap-8 text-sm text-slate-300 md:flex">
-            <a href="#about" className="transition hover:text-white">
-              About
-            </a>
-            <a href="#projects" className="transition hover:text-white">
-              Projects
-            </a>
-            <a href="#contact" className="transition hover:text-white">
-              Contact
-            </a>
+    <main className="min-h-screen overflow-hidden bg-[var(--paper)] text-[var(--ink)]">
+      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
+        <header className="flex items-center justify-between border-b border-[var(--line)] py-6">
+          <a href="#top" className="font-mono text-sm font-bold tracking-[0.18em]">
+            AKROM<span className="text-[var(--coral)]">.</span>
+          </a>
+          <nav className="flex items-center gap-5 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--muted)] sm:gap-8">
+            <a href="#about" className="transition hover:text-[var(--ink)]">About</a>
+            <a href="#work" className="transition hover:text-[var(--ink)]">Selected work</a>
+            <a href="#contact" className="transition hover:text-[var(--ink)]">Contact</a>
           </nav>
         </header>
 
-        <section className="grid items-center gap-10 py-20 lg:grid-cols-[1.2fr_0.8fr]">
-          <div>
-            <p className="mb-4 inline-flex rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3 py-1 text-xs font-medium tracking-[0.2em] text-cyan-300 uppercase">
-              Frontend developer
+        <section id="top" className="grid gap-12 border-b border-[var(--line)] py-20 sm:py-28 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
+          <div className="animate-rise">
+            <p className="mb-7 font-mono text-xs font-bold uppercase tracking-[0.22em] text-[var(--coral)]">
+              Digital maker / Surabaya, ID
             </p>
-            <h1 className="max-w-xl text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">
-              I build clean, modern digital experiences.
+            <h1 className="max-w-4xl text-5xl font-bold leading-[0.96] tracking-[-0.05em] sm:text-7xl lg:text-[6.7rem]">
+              Interfaces with <em className="font-serif font-normal text-[var(--blue)]">purpose.</em>
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
-              Hi, I’m Akrom Ramadhan — a developer focused on crafting sharp user interfaces,
-              smooth product experiences, and polished web applications.
+            <p className="mt-8 max-w-xl text-lg leading-8 text-[var(--muted)] sm:text-xl">
+              Saya Akrom Ramadhan, frontend developer yang membantu organisasi hukum dan layanan publik hadir dengan lebih jelas, berguna, dan manusiawi.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <a
-                href="#projects"
-                className="rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
-              >
-                View Projects
+            <div className="mt-9 flex flex-wrap items-center gap-5">
+              <a href="#work" className="inline-flex items-center gap-3 bg-[var(--ink)] px-5 py-3 font-mono text-xs font-bold uppercase tracking-[0.12em] text-[var(--paper)] transition hover:bg-[var(--coral)]">
+                Lihat karya <span aria-hidden="true">↘</span>
               </a>
-              <a
-                href="#contact"
-                className="rounded-full border border-slate-700 px-6 py-3 text-sm font-semibold text-white transition hover:border-slate-500 hover:bg-slate-900"
-              >
-                Let&apos;s Talk
+              <a href="mailto:akromramadhan@gmail.com" className="font-mono text-xs font-bold uppercase tracking-[0.12em] text-[var(--muted)] underline decoration-[var(--coral)] decoration-2 underline-offset-8 transition hover:text-[var(--ink)]">
+                Mulai percakapan
               </a>
             </div>
           </div>
 
-          <div className="rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900 via-slate-900 to-cyan-950 p-8 shadow-2xl shadow-cyan-950/30">
-            <div className="mb-6 flex items-center justify-between">
-              <span className="text-sm text-slate-400">Current focus</span>
-              <span className="rounded-full bg-emerald-500/15 px-2 py-1 text-xs font-medium text-emerald-300">
-                Available
-              </span>
-            </div>
-
-            <div className="space-y-4">
-              <div className="rounded-2xl border border-slate-800 bg-slate-950/60 p-4">
-                <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Role</p>
-                <p className="mt-2 text-xl font-semibold text-white">Frontend Engineer</p>
+          <div className="relative flex min-h-[330px] items-end overflow-hidden bg-[var(--blue)] p-7 text-[var(--paper)] sm:min-h-[390px] lg:mt-16">
+            <div className="absolute -right-7 -top-10 font-serif text-[15rem] leading-none text-white/10">A</div>
+            <div className="relative z-10 w-full">
+              <div className="mb-12 flex items-start justify-between border-b border-white/30 pb-4 font-mono text-[10px] uppercase tracking-[0.16em]">
+                <span>Currently building</span>
+                <span className="flex items-center gap-2"><span className="h-2 w-2 rounded-full bg-[var(--gold)]" /> Available</span>
               </div>
-              <div className="grid grid-cols-3 gap-3">
-                {stats.map((item) => (
-                  <div key={item.label} className="rounded-2xl border border-slate-800 bg-slate-950/60 p-3 text-center">
-                    <div className="text-xl font-bold text-cyan-300">{item.value}</div>
-                    <div className="mt-1 text-[10px] uppercase tracking-[0.12em] text-slate-400">
-                      {item.label}
-                    </div>
-                  </div>
-                ))}
+              <p className="max-w-xs text-3xl font-semibold leading-tight">Web yang terasa setenang dokumen yang tertata.</p>
+              <div className="mt-8 flex gap-8 font-mono text-[10px] uppercase tracking-[0.12em] text-white/70">
+                <span>3+ years<br /><strong className="text-sm text-white">crafting</strong></span>
+                <span>12 projects<br /><strong className="text-sm text-white">shipped</strong></span>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="about" className="grid gap-10 py-16 md:grid-cols-2">
+        <section id="about" className="grid gap-10 border-b border-[var(--line)] py-20 sm:py-24 md:grid-cols-[0.7fr_1.3fr]">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">About me</p>
-            <h2 className="mt-4 text-3xl font-bold text-white">Turning ideas into fast, human-centered products.</h2>
+            <p className="font-mono text-xs font-bold uppercase tracking-[0.2em] text-[var(--coral)]">01 / Tentang</p>
+            <h2 className="mt-5 max-w-sm text-3xl font-semibold leading-tight sm:text-4xl">Clarity is a feature.</h2>
           </div>
-          <div className="text-lg leading-8 text-slate-300">
-            I enjoy building interfaces that feel intuitive, look premium, and work smoothly across devices.
-            My work blends design thinking, frontend engineering, and a strong attention to performance and usability.
+          <div>
+            <p className="max-w-2xl text-2xl leading-snug tracking-[-0.025em] sm:text-3xl">
+              Saya menerjemahkan hal-hal yang rumit menjadi pengalaman digital yang mudah dipahami dan nyaman digunakan.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 font-mono text-xs uppercase tracking-[0.12em] text-[var(--muted)]">
+              {capabilities.map((capability) => <span key={capability}>↳ {capability}</span>)}
+            </div>
           </div>
         </section>
 
-        <section id="projects" className="py-16">
-          <div className="mb-10 flex items-end justify-between gap-4">
+        <section id="work" className="py-20 sm:py-24">
+          <div className="mb-12 flex items-end justify-between gap-6">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Selected work</p>
-              <h2 className="mt-4 text-3xl font-bold text-white">Recent projects</h2>
+              <p className="font-mono text-xs font-bold uppercase tracking-[0.2em] text-[var(--coral)]">02 / Karya terpilih</p>
+              <h2 className="mt-5 text-4xl font-semibold tracking-[-0.04em] sm:text-5xl">Selected work</h2>
             </div>
+            <span className="hidden font-mono text-xs text-[var(--muted)] sm:block">2023 — 2025</span>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-px bg-[var(--line)] md:grid-cols-3">
             {projects.map((project) => (
-              <article
-                key={project.title}
-                className="rounded-3xl border border-slate-800 bg-slate-900/80 p-6 transition hover:-translate-y-1 hover:border-cyan-500/40"
-              >
-                <div className="mb-6 h-40 rounded-2xl bg-gradient-to-br from-cyan-500/20 via-slate-800 to-slate-900" />
-                <h3 className="text-xl font-semibold text-white">{project.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-slate-300">{project.description}</p>
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {project.stack.map((item) => (
-                    <span
-                      key={item}
-                      className="rounded-full border border-slate-700 bg-slate-950 px-2.5 py-1 text-[11px] text-slate-300"
-                    >
-                      {item}
-                    </span>
-                  ))}
+              <article key={project.title} className="group bg-[var(--paper)] p-6 transition hover:bg-white sm:p-8">
+                <div className={`project-poster poster-${project.tone} mb-10 flex h-44 items-end justify-between p-5`}>
+                  <span className="font-mono text-xs font-bold">{project.number}</span>
+                  <span className="font-mono text-[10px] uppercase tracking-[0.12em]">{project.type}</span>
+                </div>
+                <h3 className="max-w-xs text-2xl font-semibold leading-tight tracking-[-0.03em]">{project.title}</h3>
+                <p className="mt-4 text-sm leading-7 text-[var(--muted)]">{project.description}</p>
+                <div className="mt-7 flex flex-wrap gap-x-4 gap-y-2 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--muted)]">
+                  {project.stack.map((item) => <span key={item}>• {item}</span>)}
                 </div>
               </article>
             ))}
           </div>
         </section>
 
-        <section id="contact" className="py-16">
-          <div className="rounded-3xl border border-cyan-500/30 bg-cyan-500/10 p-8 text-center md:p-12">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Contact</p>
-            <h2 className="mt-4 text-3xl font-bold text-white">Let&apos;s build something meaningful together.</h2>
-            <a
-              href="mailto:akromramadhan@gmail.com"
-              className="mt-8 inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-slate-200"
-            >
-              akromramadhan@gmail.com
-            </a>
+        <section id="contact" className="border-t border-[var(--line)] py-20 sm:py-28">
+          <div className="grid gap-10 md:grid-cols-[0.7fr_1.3fr] md:items-end">
+            <p className="font-mono text-xs font-bold uppercase tracking-[0.2em] text-[var(--coral)]">03 / Kontak</p>
+            <div>
+              <h2 className="max-w-2xl text-4xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-6xl">Ada hal yang perlu dibuat lebih jelas?</h2>
+              <a href="mailto:akromramadhan@gmail.com" className="mt-8 inline-flex border-b-2 border-[var(--coral)] pb-2 text-lg font-semibold transition hover:text-[var(--coral)]">akromramadhan@gmail.com <span className="ml-3">↗</span></a>
+            </div>
           </div>
         </section>
+
+        <footer className="flex flex-wrap justify-between gap-4 border-t border-[var(--line)] py-6 font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--muted)]">
+          <span>Akrom Ramadhan © 2025</span>
+          <span>Built with care in Indonesia</span>
+        </footer>
       </div>
     </main>
   );
