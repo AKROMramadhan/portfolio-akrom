@@ -91,19 +91,19 @@ export default function Home() {
             </div>
           </div>
 
-<div className="relative min-h-[330px] overflow-hidden">
+<div className="relative min-h-[330px] overflow-hidden bg-[#2d6870]">
 
   {/* FOTO PROFIL */}
   <div
     className="
       absolute z-20 overflow-hidden rounded-[50%]
       border-2 border-white/60
-      right-3 top-16
+      right-5 top-26
       h-52 w-36
-      sm:right-5 sm:top-14 sm:h-60 sm:w-44
-      md:right-6 md:top-14 md:h-64 md:w-48
-      lg:right-7 lg:top-14 lg:h-68 lg:w-52
-      xl:right-8 xl:top-14 xl:h-72 xl:w-56
+      sm:right-6 sm:top-14 sm:h-56 sm:w-40
+      md:right-7 md:top-14 md:h-60 md:w-44
+      lg:right-8 lg:top-16 lg:h-64 lg:w-48
+      xl:right-10 xl:top-16 xl:h-72 xl:w-56
     "
   >
     <Image
@@ -129,7 +129,15 @@ export default function Home() {
   >
 
     {/* HEADER */}
-    <div className="mb-10 flex items-start justify-between border-b border-white/30 pb-4 pr-[38%]">
+    <div
+      className="
+        mb-10
+        flex items-start justify-between
+        border-b border-white/30
+        pb-4
+        pr-[1%]
+      "
+    >
       <span>Professional profile</span>
 
       <span className="flex items-center gap-2 whitespace-nowrap">
@@ -139,33 +147,56 @@ export default function Home() {
     </div>
 
     {/* MAIN TEXT */}
-    <div className="max-w-[58%] sm:max-w-[60%] md:max-w-[58%] lg:max-w-[56%]">
+    <div
+      className="
+        max-w-[20%]
+        sm:max-w-[52%]
+        md:max-w-[52%]
+        lg:max-w-[50%]
+        xl:max-w-[52%]
+      "
+    >
       <p
         className="
-          text-2xl font-semibold leading-tight
+          text-2xl
+          font-semibold
+          leading-tight
           sm:text-3xl
           md:text-3xl
           lg:text-3xl
-          xl:text-4xl
+          xl:text-3xl
         "
       >
-        Membantu menyelesaikan persoalan hukum secara terstruktur,
-        dan dapat dipertanggungjawabkan.
+        Mari bekerja sama dalam pekerjaan bidang hukum.
       </p>
     </div>
 
     {/* STATS */}
-    <div className="mt-8 flex gap-8 font-mono text-[10px] uppercase tracking-[0.12em] sm:gap-12">
+    <div
+      className="
+        mt-8
+        flex gap-8
+        font-mono
+        text-[10px]
+        uppercase
+        tracking-[0.12em]
+        sm:gap-12
+      "
+    >
       <span>
         3.71 / 4.00
         <br />
-        <strong className="text-sm text-white">GPA</strong>
+        <strong className="text-sm text-white">
+          GPA
+        </strong>
       </span>
 
       <span>
         20+ matters
         <br />
-        <strong className="text-sm text-white">completed</strong>
+        <strong className="text-sm text-white">
+          completed
+        </strong>
       </span>
     </div>
 
