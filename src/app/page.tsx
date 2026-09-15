@@ -99,6 +99,7 @@ export default function Home() {
     src="/akrom-profile.jpg"
     alt="Muhammad Akrom Ramadhan"
     fill
+    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
     className="object-cover object-top"
     priority
   />
@@ -107,9 +108,9 @@ export default function Home() {
             <div className="relative z-10 w-full lg:w-[50%]">
               <div className="mb-12 flex items-start justify-between border-b border-white/30 pb-4 font-mono text-[10px] uppercase tracking-[0.16em]">
                 <span>Professional profile</span>
-                <span className="flex items-center gap-2"><span className="h-2 w-2 rounded-full bg-[var(--gold)]" /> Legal</span>
+                <span className="flex items-center gap-2"><span className="h-20 w-1 rounded-full bg-[var(--gold)]" /> Legal</span>
               </div>
-              <p className="max-w-full text-2xl font-semibold leading-tight sm:text-3xl lg:text-2xl xl:text-3xl">Membantu menyelesaikan persoalan hukum secara terstruktur, dan dapat dipertanggungjawab.</p>
+              <p className="max-w-full text-2xl font-semibold leading-tight sm:text-3xl lg:text-2xl xl:text-3xl">Mari bekerja sama dalam bidang hukum.</p>
               <div className="mt-8 flex gap-8 font-mono text-[10px] uppercase tracking-[0.12em] text-white/70">
                 <span>3.71 / 4.00<br /><strong className="text-sm text-white">GPA</strong></span>
                 <span>20+ matters<br /><strong className="text-sm text-white">completed</strong></span>
