@@ -1,11 +1,20 @@
 const projects = [
   {
     number: "01",
-    type: "Institutional website",
+    type: "Kerja-Manager Area",
+    title: "PT Dapur Nusantara Kolaborasi",
+    description:
+      "Mendukung persiapan, penyusunan, dan draf telaah atas kronologis, risalah gelar perkara, dan pemetaan strategi kebijakan yang menghasilkan lebih dari 20 pendampingan perkara klien.",
+    stack: ["2025-2026", "Content design"],
+    tone: "coral",
+  },
+  {
+    number: "01",
+    type: "Magang Kerja Paralegal",
     title: "Unit Konsultasi dan Bantuan Hukum",
     description:
-      "Merapikan akses informasi layanan bantuan hukum untuk civitas akademika dan masyarakat umum.",
-    stack: ["Next.js", "Content design"],
+      "Mendukung persiapan, penyusunan, dan draf telaah atas kronologis, risalah gelar perkara, dan pemetaan strategi kebijakan yang menghasilkan lebih dari 20 pendampingan perkara klien.",
+    stack: ["2025-2026", "Content design"],
     tone: "coral",
   },
   {
@@ -14,7 +23,7 @@ const projects = [
     title: "Pengadilan Negeri Purbalingga 1B",
     description:
       "Menyusun pengalaman digital yang lebih jelas untuk informasi perkara, layanan, dan publikasi pengadilan.",
-    stack: ["Responsive UI", "Information architecture"],
+    stack: ["2023-2024", "Information architecture"],
     tone: "blue",
   },
   {
@@ -23,7 +32,7 @@ const projects = [
     title: "PPAT / Notaris Sri Wahyu Jatmikowati",
     description:
       "Membangun kehadiran digital yang tepercaya untuk layanan pertanahan dan legalitas.",
-    stack: ["UX direction", "Web design"],
+    stack: ["2022-2023", "Web design"],
     tone: "gold",
   },
 ];
