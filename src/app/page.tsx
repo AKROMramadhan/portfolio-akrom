@@ -98,12 +98,20 @@ export default function Home() {
     className="
       absolute z-20 overflow-hidden rounded-[50%]
       border-2 border-white/60
-      right-5 top-26
+      right-5 top-16
       h-52 w-36
-      sm:right-6 sm:top-14 sm:h-56 sm:w-40
-      md:right-7 md:top-14 md:h-60 md:w-44
-      lg:right-8 lg:top-16 lg:h-64 lg:w-48
-      xl:right-10 xl:top-16 xl:h-72 xl:w-56
+
+      sm:right-6 sm:top-14
+      sm:h-56 sm:w-40
+
+      md:right-7 md:top-14
+      md:h-60 md:w-44
+
+      lg:right-6 lg:top-14
+      lg:h-64 lg:w-48
+
+      xl:right-8 xl:top-14
+      xl:h-72 xl:w-56
     "
   >
     <Image
@@ -121,9 +129,13 @@ export default function Home() {
       relative z-10
       w-full
       px-6 pt-8 pb-6
+
       sm:px-8
       md:px-10
+
       lg:px-10
+      lg:pt-8
+
       xl:px-10
     "
   >
@@ -131,16 +143,20 @@ export default function Home() {
     {/* HEADER */}
     <div
       className="
-        mb-10
+        mb-8
         flex items-start justify-between
         border-b border-white/30
         pb-4
-        pr-[1%]
+
+        pr-[38%]
+        lg:pr-[42%]
       "
     >
-      <span>Professional profile</span>
+      <span className="text-white">
+        Professional profile
+      </span>
 
-      <span className="flex items-center gap-2 whitespace-nowrap">
+      <span className="flex items-center gap-2 whitespace-nowrap text-white">
         <span className="h-2 w-2 rounded-full bg-[#f5b942]" />
         Legal
       </span>
@@ -149,11 +165,13 @@ export default function Home() {
     {/* MAIN TEXT */}
     <div
       className="
-        max-w-[20%]
+        max-w-[50%]
+
         sm:max-w-[52%]
         md:max-w-[52%]
-        lg:max-w-[50%]
-        xl:max-w-[52%]
+
+        lg:max-w-[52%]
+        xl:max-w-[54%]
       "
     >
       <p
@@ -161,13 +179,17 @@ export default function Home() {
           text-2xl
           font-semibold
           leading-tight
+          text-white
+
           sm:text-3xl
           md:text-3xl
-          lg:text-3xl
+
+          lg:text-2xl
           xl:text-3xl
         "
       >
-        Mari bekerja sama dalam pekerjaan bidang hukum.
+        Membantu menyelesaikan persoalan hukum secara terstruktur,
+        dan dapat dipertanggungjawabkan.
       </p>
     </div>
 
@@ -180,6 +202,8 @@ export default function Home() {
         text-[10px]
         uppercase
         tracking-[0.12em]
+        text-white
+
         sm:gap-12
       "
     >
