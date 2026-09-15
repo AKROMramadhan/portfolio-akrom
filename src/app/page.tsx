@@ -1,12 +1,12 @@
 const projects = [
   {
-    title: "Portfolio Showcase",
+    title: "Portfolio Akrom",
     description:
-      "Modern personal brand website built with Next.js and Tailwind CSS for a polished digital presence.",
+      "Ini adalah portofolio modern dari Akrom.js and Tailwind CSS for a polished digital presence.",
     stack: ["Next.js", "Tailwind", "TypeScript"],
   },
   {
-    title: "Business Landing Page",
+    title: "Bagian hukum",
     description:
       "Responsive marketing page focused on product clarity, conversion, and strong visual storytelling.",
     stack: ["React", "UI Design", "Responsive"],
