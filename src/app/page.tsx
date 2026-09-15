@@ -91,32 +91,86 @@ export default function Home() {
             </div>
           </div>
 
+<div className="relative min-h-[330px] overflow-hidden">
 
-          <div className="relative flex min-h-[330px] items-end overflow-hidden bg-[var(--blue)] p-7 text-[var(--paper)] sm:min-h-[390px] lg:mt-16">
-            {/* FOTO PROFIL */}
-            <div className="absolute right-4 top-20 z-20 h-56 w-40 overflow-hidden rounded-full border-4 border-white/70 shadow-xl sm:h-70 sm:w-50">
-  <Image
-    src="/akrom-profile.jpg"
-    alt="Muhammad Akrom Ramadhan"
-    fill
-    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-    className="object-cover object-top"
-    priority
-  />
+  {/* FOTO PROFIL */}
+  <div
+    className="
+      absolute z-20 overflow-hidden rounded-[50%]
+      border-2 border-white/60
+      right-3 top-16
+      h-52 w-36
+      sm:right-5 sm:top-14 sm:h-60 sm:w-44
+      md:right-6 md:top-14 md:h-64 md:w-48
+      lg:right-7 lg:top-14 lg:h-68 lg:w-52
+      xl:right-8 xl:top-14 xl:h-72 xl:w-56
+    "
+  >
+    <Image
+      src="/akrom-profile.jpg"
+      alt="Muhammad Akrom Ramadhan"
+      fill
+      className="object-cover object-top"
+      priority
+    />
+  </div>
+
+  {/* ISI PROFESSIONAL PROFILE */}
+  <div
+    className="
+      relative z-10
+      w-full
+      px-6 pt-8 pb-6
+      sm:px-8
+      md:px-10
+      lg:px-10
+      xl:px-10
+    "
+  >
+
+    {/* HEADER */}
+    <div className="mb-10 flex items-start justify-between border-b border-white/30 pb-4 pr-[38%]">
+      <span>Professional profile</span>
+
+      <span className="flex items-center gap-2 whitespace-nowrap">
+        <span className="h-2 w-2 rounded-full bg-[#f5b942]" />
+        Legal
+      </span>
+    </div>
+
+    {/* MAIN TEXT */}
+    <div className="max-w-[58%] sm:max-w-[60%] md:max-w-[58%] lg:max-w-[56%]">
+      <p
+        className="
+          text-2xl font-semibold leading-tight
+          sm:text-3xl
+          md:text-3xl
+          lg:text-3xl
+          xl:text-4xl
+        "
+      >
+        Membantu menyelesaikan persoalan hukum secara terstruktur,
+        dan dapat dipertanggungjawabkan.
+      </p>
+    </div>
+
+    {/* STATS */}
+    <div className="mt-8 flex gap-8 font-mono text-[10px] uppercase tracking-[0.12em] sm:gap-12">
+      <span>
+        3.71 / 4.00
+        <br />
+        <strong className="text-sm text-white">GPA</strong>
+      </span>
+
+      <span>
+        20+ matters
+        <br />
+        <strong className="text-sm text-white">completed</strong>
+      </span>
+    </div>
+
+  </div>
 </div>
-            <div className="absolute -right-7 -top-10 font-serif text-[15rem] leading-none text-white/10">A</div>
-            <div className="relative z-10 w-full lg:w-[50%]">
-              <div className="mb-12 flex items-start justify-between border-b border-white/30 pb-4 font-mono text-[10px] uppercase tracking-[0.16em]">
-                <span>Professional profile</span>
-                <span className="flex items-center gap-2"><span className="h-20 w-1 rounded-full bg-[var(--gold)]" /> Legal</span>
-              </div>
-              <p className="max-w-full text-2xl font-semibold leading-tight sm:text-3xl lg:text-2xl xl:text-3xl">Mari bekerja sama dalam bidang hukum.</p>
-              <div className="mt-8 flex gap-8 font-mono text-[10px] uppercase tracking-[0.12em] text-white/70">
-                <span>3.71 / 4.00<br /><strong className="text-sm text-white">GPA</strong></span>
-                <span>20+ matters<br /><strong className="text-sm text-white">completed</strong></span>
-              </div>
-            </div>
-          </div>
         </section>
 
         <section id="about" className="grid gap-10 border-b border-[var(--line)] py-20 sm:py-24 md:grid-cols-[0.7fr_1.3fr]">
