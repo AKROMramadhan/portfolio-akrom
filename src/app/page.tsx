@@ -1,3 +1,4 @@
+import Image from "next/image";
 const projects = [
   {
     number: "01",
@@ -10,7 +11,7 @@ const projects = [
   },
   {
     number: "02",
-    type: "Certified Paralegal of Legal Aid",
+    type: "Certified of Legal Aid",
     title: "Unit Konsultasi & Bantuan Hukum",
     description:
       "Memberikan dukungan layanan hukum litigasi dan non-litigasi bidang perdata dan pidana, mulai pra-peradilan hingga pasca putusan. Mendukung telaah hukum, pendapat hukum, gelar perkara, pendampingan klien, dan pengelolaan database bantuan hukum.",
@@ -90,7 +91,18 @@ export default function Home() {
             </div>
           </div>
 
+
           <div className="relative flex min-h-[330px] items-end overflow-hidden bg-[var(--blue)] p-7 text-[var(--paper)] sm:min-h-[390px] lg:mt-16">
+            {/* FOTO PROFIL */}
+            <div className="absolute right-6 top-17 z-20 h-64 w-48 overflow-hidden rounded-full border-4 border-white/70 shadow-xl sm:h-77 sm:w-56">
+  <Image
+    src="/akrom-profile.jpg"
+    alt="Muhammad Akrom Ramadhan"
+    fill
+    className="object-cover object-top"
+    priority
+  />
+</div>
             <div className="absolute -right-7 -top-10 font-serif text-[15rem] leading-none text-white/10">A</div>
             <div className="relative z-10 w-full">
               <div className="mb-12 flex items-start justify-between border-b border-white/30 pb-4 font-mono text-[10px] uppercase tracking-[0.16em]">
