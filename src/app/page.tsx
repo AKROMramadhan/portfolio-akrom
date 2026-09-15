@@ -60,7 +60,7 @@ export default function Home() {
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
         <header className="flex items-center justify-between border-b border-[var(--line)] py-6">
           <a href="#top" className="font-mono text-sm font-bold tracking-[0.18em]">
-            AKROM<span className="text-[var(--coral)]">.</span>
+            MUHAMMAD AKROM RAMADHAN<span className="text-[var(--coral)]">.</span>
           </a>
           <nav className="flex items-center gap-5 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--muted)] sm:gap-8">
             <a href="#about" className="transition hover:text-[var(--ink)]">About</a>
@@ -69,6 +69,28 @@ export default function Home() {
             <a href="#contact" className="transition hover:text-[var(--ink)]">Contact</a>
           </nav>
         </header>
+
+  {/* FOTO PROFIL */}
+  <div
+    className="
+      absolute z-20 overflow-hidden rounded-[50%]
+      border-2 border-white/60
+      right-5 top-26
+      h-52 w-36
+      sm:right-6 sm:top-14 sm:h-56 sm:w-40
+      md:right-7 md:top-14 md:h-60 md:w-44
+      lg:right-8 lg:top-16 lg:h-64 lg:w-48
+      xl:right-10 xl:top-16 xl:h-72 xl:w-56
+    "
+  >
+    <Image
+      src="/akrom-profile.jpg"
+      alt="Muhammad Akrom Ramadhan"
+      fill
+      className="object-cover object-top"
+      priority
+    />
+  </div>
 
         <section id="top" className="grid gap-12 border-b border-[var(--line)] py-20 sm:py-28 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
           <div className="animate-rise">
@@ -92,28 +114,6 @@ export default function Home() {
           </div>
 
 <div className="relative min-h-[330px] overflow-hidden bg-[#2d6870]">
-
-  {/* FOTO PROFIL */}
-  <div
-    className="
-      absolute z-20 overflow-hidden rounded-[50%]
-      border-2 border-white/60
-      right-5 top-26
-      h-52 w-36
-      sm:right-6 sm:top-14 sm:h-56 sm:w-40
-      md:right-7 md:top-14 md:h-60 md:w-44
-      lg:right-8 lg:top-16 lg:h-64 lg:w-48
-      xl:right-10 xl:top-16 xl:h-72 xl:w-56
-    "
-  >
-    <Image
-      src="/akrom-profile.jpg"
-      alt="Muhammad Akrom Ramadhan"
-      fill
-      className="object-cover object-top"
-      priority
-    />
-  </div>
 
   {/* ISI PROFESSIONAL PROFILE */}
   <div
