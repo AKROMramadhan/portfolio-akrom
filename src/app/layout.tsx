@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Akrom Ramadhan | Digital maker",
-  description: "Portfolio Akrom Ramadhan, frontend developer untuk produk digital yang jelas dan berguna.",
+  title: "Akrom Ramadhan | Hukum.",
+  description: "Portfolio Akrom Ramadhan, Lulusan Fakultas Hukum Universitas Airlangga yang memiliki pengalaman praktis dalam bantuan hukum litigasi dan non litigasi.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
