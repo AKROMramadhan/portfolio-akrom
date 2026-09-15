@@ -202,6 +202,7 @@ export default function Home() {
 
   </div>
 </div>
+
         </section>
 
         <section id="about" className="grid gap-10 border-b border-[var(--line)] py-20 sm:py-24 md:grid-cols-[0.7fr_1.3fr]">
