@@ -94,7 +94,7 @@ export default function Home() {
 
           <div className="relative flex min-h-[330px] items-end overflow-hidden bg-[var(--blue)] p-7 text-[var(--paper)] sm:min-h-[390px] lg:mt-16">
             {/* FOTO PROFIL */}
-            <div className="absolute right-6 top-17 z-20 h-64 w-48 overflow-hidden rounded-full border-4 border-white/70 shadow-xl sm:h-77 sm:w-56">
+            <div className="absolute right-4 top-20 z-20 h-56 w-40 overflow-hidden rounded-full border-4 border-white/70 shadow-xl sm:h-70 sm:w-50">
   <Image
     src="/akrom-profile.jpg"
     alt="Muhammad Akrom Ramadhan"
@@ -104,12 +104,12 @@ export default function Home() {
   />
 </div>
             <div className="absolute -right-7 -top-10 font-serif text-[15rem] leading-none text-white/10">A</div>
-            <div className="relative z-10 w-full">
+            <div className="relative z-10 w-full lg:w-[58%]">
               <div className="mb-12 flex items-start justify-between border-b border-white/30 pb-4 font-mono text-[10px] uppercase tracking-[0.16em]">
                 <span>Professional profile</span>
                 <span className="flex items-center gap-2"><span className="h-2 w-2 rounded-full bg-[var(--gold)]" /> Legal</span>
               </div>
-              <p className="max-w-[30%] text-2xl font-semibold leading-tight">Membantu menyelesaikan persoalan hukum secara terstruktur, dan dapat dipertanggungjawab.</p>
+              <p className="max-w-full text-2xl font-semibold leading-tight sm:text-3xl">Membantu menyelesaikan persoalan hukum secara terstruktur, dan dapat dipertanggungjawab.</p>
               <div className="mt-8 flex gap-8 font-mono text-[10px] uppercase tracking-[0.12em] text-white/70">
                 <span>3.71 / 4.00<br /><strong className="text-sm text-white">GPA</strong></span>
                 <span>20+ matters<br /><strong className="text-sm text-white">completed</strong></span>
