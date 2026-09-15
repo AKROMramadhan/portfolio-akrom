@@ -109,7 +109,7 @@ export default function Home() {
                 <span>Professional profile</span>
                 <span className="flex items-center gap-2"><span className="h-2 w-2 rounded-full bg-[var(--gold)]" /> Legal</span>
               </div>
-              <p className="max-w-[52%] text-3xl font-semibold leading-tight">Membantu menyelesaikan persoalan hukum secara terstruktur, tertata, teliti, dan dapat dipertanggungjawab.</p>
+              <p className="max-w-[52%] text-3xl font-semibold leading-tight">Membantu menyelesaikan persoalan hukum secara terstruktur, dan dapat dipertanggungjawab.</p>
               <div className="mt-8 flex gap-8 font-mono text-[10px] uppercase tracking-[0.12em] text-white/70">
                 <span>3.71 / 4.00<br /><strong className="text-sm text-white">GPA</strong></span>
                 <span>20+ matters<br /><strong className="text-sm text-white">completed</strong></span>
