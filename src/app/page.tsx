@@ -42,7 +42,7 @@ export default function Home() {
       </header>
 
       <section className="hero-editorial">
-        <Image src="/akrom-profile.jpg" alt="Muhammad Akrom Ramadhan" fill priority className="hero-image object-[center_top]" />
+        <Image src="/akrom-profile.jpg" alt="Muhammad Akrom Ramadhan" fill priority className="hero-image" />
         <div className="hero-content">
           <p className="mb-6 font-mono text-[10px] uppercase tracking-[0.2em] text-white/70">Law Graduate · Surabaya, Indonesia</p>
           <h1 className="hero-title">Muhammad<br />Akrom Ramadhan</h1>

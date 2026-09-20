@@ -128,29 +128,33 @@ body {
   color: white;
 }
 
-.hero-editorial::after {
+.hero-editorial::before {
   content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.42) 42%, rgba(0, 0, 0, 0.08) 100%),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.68), transparent 55%);
+    linear-gradient(90deg, rgba(2, 3, 4, 0.86) 0%, rgba(2, 3, 4, 0.78) 18%, rgba(2, 3, 4, 0.52) 34%, rgba(2, 3, 4, 0.18) 58%, rgba(2, 3, 4, 0.06) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+  z-index: 1;
 }
 
 .hero-image {
-  position: absolute;
+  position: absolute !important;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 68% center;
+  transform: scale(1.05);
+  z-index: 0;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  width: min(1400px, calc(100% - 48px));
-  margin: 0 auto;
+  width: min(560px, calc(100% - 48px));
+  margin: 0 auto 0 0;
   padding: 120px 0 72px;
 }
 
@@ -183,6 +187,51 @@ body {
   gap: 28px;
   max-width: 720px;
   margin-top: 72px;
+}
+
+@media (max-width: 1024px) {
+  .hero-editorial {
+    min-height: 760px;
+  }
+
+  .hero-image {
+    object-position: 70% center;
+  }
+
+  .hero-content {
+    width: min(500px, calc(100% - 36px));
+    padding-top: 110px;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-editorial {
+    min-height: 700px;
+  }
+
+  .hero-editorial::before {
+    background:
+      linear-gradient(90deg, rgba(2, 3, 4, 0.9) 0%, rgba(2, 3, 4, 0.82) 20%, rgba(2, 3, 4, 0.64) 38%, rgba(2, 3, 4, 0.32) 58%, rgba(2, 3, 4, 0.08) 100%),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.54));
+  }
+
+  .hero-image {
+    object-position: 72% center;
+    transform: scale(1.12);
+  }
+
+  .hero-content {
+    width: min(100%, calc(100% - 28px));
+    margin: 0 auto;
+    padding-top: 96px;
+    padding-bottom: 54px;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+    max-width: 100%;
+    gap: 18px 24px;
+  }
 }
 
 .hero-stat {
