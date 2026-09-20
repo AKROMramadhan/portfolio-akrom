@@ -3,7 +3,7 @@ const projects = [
   {
     number: "01",
     type: "Legal Management",
-    title: "Dapur Laborasi",
+    title: "PT Dapur Nusantara Kolaborasi",
     description:
       "Mengelola pengawasan dan tata kelola pembangunan dapur SPPG wilayah Jawa Timur, termasuk pemetaan kebutuhan, laporan terintegrasi berbasis AI, serta dokumen perizinan, SLHS, kontrak, dan administrasi.",
     stack: ["Apr 2026 — Sekarang", "Legal & Administration"],
