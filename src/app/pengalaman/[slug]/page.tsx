@@ -2,11 +2,9 @@ import Link from "next/link";
 import { achievements, experiences, projects, type PortfolioItem } from "../../data/portfolio";
 
 export default async function DetailPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const pathname = "pengalaman";
-  const collection: PortfolioItem[] =
-    pathname === "pengalaman" ? experiences : pathname === "prestasi" ? achievements : projects;
-  const item = collection.find((x) => x.slug === slug);
+const { slug } = await params;
+const collection: PortfolioItem[] = experiences;
+const item = collection.find((x) => x.slug === slug);
 
   if (!item) {
     return (
