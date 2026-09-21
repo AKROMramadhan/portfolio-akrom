@@ -41,11 +41,7 @@ export default async function DetailPage({
       {/* HEADER */}
       <header className="detail-header">
         <div className="editorial-container flex items-center justify-between">
-
-          <Link
-            href="/"
-            className="font-serif text-xl"
-          >
+          <Link href="/" className="font-serif text-xl">
             AKROM.
           </Link>
 
@@ -55,16 +51,18 @@ export default async function DetailPage({
           >
             ← Home
           </Link>
-
         </div>
       </header>
 
+      {/* =====================================================
+          HALAMAN KHUSUS NOTARIS
+      ===================================================== */}
 
-      {/* KHUSUS HALAMAN NOTARIS */}
       {isNotaris ? (
         <>
 
-          {/* HERO */}
+          {/* ================= HERO ================= */}
+
           <section className="notaris-hero">
 
             <div className="notaris-hero-copy">
@@ -86,26 +84,24 @@ export default async function DetailPage({
               </p>
 
               <div className="notaris-tags">
-
                 {item.highlights.map((h) => (
                   <span key={h}>
                     {h}
                   </span>
                 ))}
-
               </div>
 
             </div>
 
-
-            {/* FOTO UTAMA */}
+            {/* FOTO HERO */}
             <div className="notaris-hero-photo">
 
               <Image
-                src="/pengalaman/notaris/07-di-depan-kantor.jpg"
+                src="/pengalaman/notaris/07-di-depan-kantor.jpg?v=2"
                 alt="Muhammad Akrom Ramadhan di depan kantor Notaris dan PPAT"
                 fill
                 priority
+                unoptimized
                 sizes="(max-width: 900px) 100vw, 50vw"
                 className="notaris-cover-image"
               />
@@ -115,7 +111,8 @@ export default async function DetailPage({
           </section>
 
 
-          {/* INTRO */}
+          {/* ================= EXPERIENCE ================= */}
+
           <section className="section notaris-section">
 
             <div className="editorial-container">
@@ -134,7 +131,6 @@ export default async function DetailPage({
 
                 </div>
 
-
                 <div className="detail-copy">
 
                   {item.details.map((d) => (
@@ -148,15 +144,18 @@ export default async function DetailPage({
               </div>
 
 
-              {/* FOTO KEGIATAN UTAMA */}
+              {/* ================= FOTO AKTIVITAS ================= */}
+
               <div className="notaris-feature-grid">
 
+                {/* FOTO UTAMA */}
                 <div className="notaris-feature-main">
 
                   <Image
-                    src="/pengalaman/notaris/09-dokumen-kantor.jpg"
-                    alt="Aktivitas pekerjaan di kantor notaris"
+                    src="/pengalaman/notaris/09-dokumen-kantor.jpg?v=2"
+                    alt="Aktivitas pekerjaan Muhammad Akrom Ramadhan di kantor notaris"
                     fill
+                    unoptimized
                     sizes="(max-width: 900px) 100vw, 65vw"
                     className="notaris-image"
                   />
@@ -164,14 +163,17 @@ export default async function DetailPage({
                 </div>
 
 
+                {/* FOTO SAMPING */}
                 <div className="notaris-feature-side">
 
+                  {/* FOTO KANTOR */}
                   <div className="notaris-photo-small">
 
                     <Image
-                      src="/pengalaman/notaris/09-dokumen-kantor.jpg"
-                      alt="Dokumen pekerjaan di kantor notaris"
+                      src="/pengalaman/notaris/03-foto-bersama-kantor.jpg?v=2"
+                      alt="Dokumentasi bersama di kantor notaris"
                       fill
+                      unoptimized
                       sizes="(max-width: 900px) 100vw, 35vw"
                       className="notaris-image"
                     />
@@ -179,12 +181,14 @@ export default async function DetailPage({
                   </div>
 
 
+                  {/* FOTO BERSAMA */}
                   <div className="notaris-photo-small">
 
                     <Image
-                      src="/pengalaman/notaris/03-foto-bersama-kantor.jpg"
-                      alt="Dokumentasi bersama di kantor notaris"
+                      src="/pengalaman/notaris/04-foto-bersama.jpg?v=2"
+                      alt="Dokumentasi bersama rekan magang"
                       fill
+                      unoptimized
                       sizes="(max-width: 900px) 100vw, 35vw"
                       className="notaris-image"
                     />
@@ -196,28 +200,30 @@ export default async function DetailPage({
               </div>
 
 
-              {/* FOTO LAIN */}
+              {/* ================= GALLERY ================= */}
+
               <div className="notaris-gallery">
 
                 <div className="notaris-gallery-item notaris-gallery-wide">
 
                   <Image
-                    src="/pengalaman/notaris/04-foto-bersama.jpg"
-                    alt="Dokumentasi bersama rekan magang"
+                    src="/pengalaman/notaris/05-dokumentasi-kegiatan.jpg?v=2"
+                    alt="Dokumentasi kegiatan magang"
                     fill
+                    unoptimized
                     sizes="(max-width: 900px) 100vw, 60vw"
                     className="notaris-image"
                   />
 
                 </div>
 
-
                 <div className="notaris-gallery-item">
 
                   <Image
-                    src="/pengalaman/notaris/05-dokumentasi-kegiatan.jpg"
-                    alt="Dokumentasi kegiatan magang"
+                    src="/pengalaman/notaris/07-di-depan-kantor.jpg?v=2"
+                    alt="Dokumentasi di depan kantor notaris"
                     fill
+                    unoptimized
                     sizes="(max-width: 900px) 100vw, 40vw"
                     className="notaris-image"
                   />
@@ -227,7 +233,8 @@ export default async function DetailPage({
               </div>
 
 
-              {/* CREDENTIAL */}
+              {/* ================= CREDENTIALS ================= */}
+
               <div className="notaris-credentials">
 
                 <div>
@@ -256,9 +263,10 @@ export default async function DetailPage({
                     <div className="notaris-document-image">
 
                       <Image
-                        src="/pengalaman/notaris/01-sertifikat.jpg"
+                        src="/pengalaman/notaris/01-sertifikat.jpg?v=2"
                         alt="Sertifikat magang"
                         fill
+                        unoptimized
                         sizes="(max-width: 700px) 100vw, 50vw"
                         className="notaris-document-cover"
                       />
@@ -272,15 +280,16 @@ export default async function DetailPage({
                   </div>
 
 
-                  {/* SURAT */}
+                  {/* SURAT KETERANGAN */}
                   <div className="notaris-document">
 
                     <div className="notaris-document-image">
 
                       <Image
-                        src="/pengalaman/notaris/02-surat-keterangan.jpg"
+                        src="/pengalaman/notaris/02-surat-keterangan.jpg?v=2"
                         alt="Surat keterangan magang"
                         fill
+                        unoptimized
                         sizes="(max-width: 700px) 100vw, 50vw"
                         className="notaris-document-cover"
                       />
@@ -298,7 +307,8 @@ export default async function DetailPage({
               </div>
 
 
-              {/* BACK */}
+              {/* ================= BACK ================= */}
+
               <div className="notaris-back">
 
                 <Link href="/#pengalaman">
@@ -315,7 +325,10 @@ export default async function DetailPage({
 
       ) : (
 
-        /* HALAMAN PENGALAMAN LAIN */
+        /* =====================================================
+           HALAMAN PENGALAMAN LAIN
+        ===================================================== */
+
         <section className="section">
 
           <div className="editorial-container detail-content">
