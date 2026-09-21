@@ -1125,7 +1125,8 @@ body {
 }
 
 .editorial-doc-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(180px, 220px));
+  justify-content: start;
   margin-top: clamp(2rem, 4vw, 3rem);
 }
 
@@ -1137,9 +1138,10 @@ body {
 
 .notaris-document-image {
   position: relative;
-  aspect-ratio: 1 / 1.34;
+  width: clamp(180px, 18vw, 220px);
+  aspect-ratio: 1 / 1.414;
   overflow: hidden;
-  border: 1px solid #d7d1ca;
+  border: 1px solid #bfc0bf;
   background: #ffffff;
 }
 
@@ -1242,6 +1244,10 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .editorial-doc-grid {
+    grid-template-columns: repeat(2, minmax(180px, 220px));
+  }
+
   .notaris-photo-tall,
   .notaris-photo-short,
   .notaris-doc-card,
@@ -1259,5 +1265,11 @@ body {
 
   .notaris-hero-quote {
     max-width: 12rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .editorial-doc-grid {
+    grid-template-columns: 1fr;
   }
 }
