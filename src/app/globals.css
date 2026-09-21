@@ -832,3 +832,256 @@ body {
   .detail-hero .display-title { font-size: clamp(48px, 14vw, 74px); }
   .detail-copy { font-size: 15px; }
 }
+/* =========================================
+   NOTARIS EXPERIENCE
+========================================= */
+
+.notaris-hero {
+  min-height: min(760px, 88vh);
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  background: var(--ink);
+  color: white;
+}
+
+.notaris-hero-copy {
+  padding: clamp(3rem, 7vw, 7rem) clamp(1.5rem, 5vw, 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.notaris-hero-copy h1 {
+  margin-top: 1rem;
+  max-width: 760px;
+  font-family: Georgia, serif;
+  font-size: clamp(3rem, 6vw, 6.5rem);
+  line-height: 0.94;
+  letter-spacing: -0.045em;
+}
+
+.notaris-period {
+  margin-top: 1.5rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.7;
+}
+
+.notaris-summary {
+  margin-top: 2rem;
+  max-width: 620px;
+  color: rgba(255,255,255,.72);
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.notaris-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: 2rem;
+}
+
+.notaris-tags span {
+  border: 1px solid rgba(255,255,255,.22);
+  padding: .6rem .8rem;
+  font-size: .68rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.notaris-hero-photo {
+  position: relative;
+  min-height: 620px;
+  overflow: hidden;
+}
+
+.notaris-cover-image,
+.notaris-image {
+  object-fit: cover;
+}
+
+.notaris-section {
+  padding-top: clamp(4rem, 8vw, 8rem);
+  padding-bottom: clamp(4rem, 8vw, 8rem);
+}
+
+.notaris-intro {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  gap: clamp(2rem, 7vw, 7rem);
+  align-items: start;
+}
+
+.notaris-intro .detail-copy {
+  max-width: 700px;
+}
+
+.notaris-feature-grid {
+  margin-top: clamp(4rem, 8vw, 8rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(260px, .75fr);
+  gap: 1rem;
+}
+
+.notaris-feature-main {
+  position: relative;
+  min-height: 680px;
+  overflow: hidden;
+}
+
+.notaris-feature-side {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.notaris-photo-small {
+  position: relative;
+  min-height: 330px;
+  overflow: hidden;
+}
+
+.notaris-gallery {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, .65fr);
+  gap: 1rem;
+}
+
+.notaris-gallery-item {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+}
+
+.notaris-gallery-wide {
+  min-height: 620px;
+}
+
+.notaris-credentials {
+  margin-top: clamp(5rem, 10vw, 10rem);
+  padding-top: 3rem;
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr);
+  gap: clamp(2rem, 7vw, 7rem);
+}
+
+.notaris-credential-copy {
+  margin-top: 1.5rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.notaris-document-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.notaris-document-image {
+  position: relative;
+  aspect-ratio: 1 / 1.414;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.notaris-document-cover {
+  object-fit: contain;
+  padding: .5rem;
+}
+
+.notaris-document p {
+  margin-top: .8rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .68rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.notaris-back {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.notaris-back a {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .notaris-hero,
+  .notaris-intro,
+  .notaris-credentials {
+    grid-template-columns: 1fr;
+  }
+
+  .notaris-hero-copy {
+    padding-bottom: 3rem;
+  }
+
+  .notaris-hero-photo {
+    min-height: 520px;
+  }
+
+  .notaris-feature-grid,
+  .notaris-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .notaris-feature-main,
+  .notaris-gallery-wide,
+  .notaris-gallery-item {
+    min-height: 520px;
+  }
+
+  .notaris-feature-side {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+  }
+
+  .notaris-photo-small {
+    min-height: 360px;
+  }
+
+}
+
+
+/* HP */
+
+@media (max-width: 620px) {
+
+  .notaris-hero-copy h1 {
+    font-size: clamp(2.8rem, 13vw, 4.5rem);
+  }
+
+  .notaris-hero-photo {
+    min-height: 440px;
+  }
+
+  .notaris-feature-side,
+  .notaris-document-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .notaris-feature-main,
+  .notaris-gallery-wide,
+  .notaris-gallery-item,
+  .notaris-photo-small {
+    min-height: 430px;
+  }
+
+}

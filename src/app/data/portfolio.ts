@@ -54,7 +54,16 @@ export const experiences: PortfolioItem[] = [
       "Mendukung digitalisasi arsip lebih dari 200 akta.",
     ],
     highlights: [">200 akta terdigitalisasi", "Document review", "Legal administration"],
-    images: [],
+    images: [
+      "/pengalaman/notaris/07-di-depan-kantor.jpg",
+      "/pengalaman/notaris/06-kegiatan-meja-kerja.jpg",
+      "/pengalaman/notaris/09-dokumen-kantor.jpg",
+      "/pengalaman/notaris/03-foto-bersama-kantor.jpg",
+      "/pengalaman/notaris/04-foto-bersama.jpg",
+      "/pengalaman/notaris/05-dokumentasi-kegiatan.jpg",
+      "/pengalaman/notaris/01-sertifikat.jpg",
+      "/pengalaman/notaris/02-surat-keterangan.jpg",
+    ],
   },
   {
     slug: "pengadilan-negeri-purbalingga",
