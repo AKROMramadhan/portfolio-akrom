@@ -13,8 +13,60 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Akrom Ramadhan | Hukum.",
-  description: "Portfolio Akrom Ramadhan, Lulusan Fakultas Hukum Universitas Airlangga yang memiliki pengalaman praktis dalam bantuan hukum litigasi dan non litigasi.",
+  metadataBase: new URL("https://portfolio-akrom.vercel.app"),
+
+  title: {
+    default: "Muhammad Akrom Ramadhan | Legal Portfolio",
+    template: "%s | Muhammad Akrom Ramadhan",
+  },
+
+  description:
+    "Portofolio Muhammad Akrom Ramadhan, lulusan Fakultas Hukum Universitas Airlangga dengan pengalaman dalam bantuan hukum, legal research, legal drafting, PPAT/Notaris, dan administrasi peradilan.",
+
+  keywords: [
+    "Muhammad Akrom Ramadhan",
+    "Akrom Ramadhan",
+    "Legal Portfolio",
+    "Portfolio Hukum",
+    "Lulusan Hukum Universitas Airlangga",
+    "Universitas Airlangga",
+    "Legal Research",
+    "Legal Drafting",
+    "Bantuan Hukum",
+    "PPAT Notaris",
+    "Administrasi Peradilan",
+  ],
+
+  authors: [
+    {
+      name: "Muhammad Akrom Ramadhan",
+    },
+  ],
+
+  creator: "Muhammad Akrom Ramadhan",
+
+  alternates: {
+    canonical: "https://portfolio-akrom.vercel.app",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+
+  openGraph: {
+    title: "Muhammad Akrom Ramadhan | Legal Portfolio",
+    description:
+      "Portofolio profesional Muhammad Akrom Ramadhan — Legal Research, Legal Drafting, Bantuan Hukum, PPAT/Notaris, dan Administrasi Peradilan.",
+    url: "https://portfolio-akrom.vercel.app",
+    siteName: "Muhammad Akrom Ramadhan",
+    locale: "id_ID",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
