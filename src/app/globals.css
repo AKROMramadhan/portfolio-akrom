@@ -903,6 +903,10 @@ body {
   object-fit: cover;
 }
 
+.notaris-feature-main .notaris-image {
+  object-position: center 35%;
+}
+
 .notaris-section {
   padding-top: clamp(4rem, 8vw, 8rem);
   padding-bottom: clamp(4rem, 8vw, 8rem);

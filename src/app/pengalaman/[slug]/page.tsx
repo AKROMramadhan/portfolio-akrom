@@ -154,7 +154,7 @@ export default async function DetailPage({
                 <div className="notaris-feature-main">
 
                   <Image
-                    src="/pengalaman/notaris/06-kegiatan-meja-kerja.jpg"
+                    src="/pengalaman/notaris/09-dokumen-kantor.jpg"
                     alt="Aktivitas pekerjaan di kantor notaris"
                     fill
                     sizes="(max-width: 900px) 100vw, 65vw"
